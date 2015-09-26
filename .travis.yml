@@ -2,5 +2,5 @@ sudo: false
 
 language: php
 
-script:
-    - echo “tests”
+scripts:
+  - echo "tests"

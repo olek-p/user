@@ -11,5 +11,5 @@ $app->put('/user/register', function ($name) use ($app) {
 $app->post('/user/login', function ($name) use ($app) {
     return JsonResponse('Hello world, this is login');
 });
-
+$app['debug'] = true;
 $app->run();
