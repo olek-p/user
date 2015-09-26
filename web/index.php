@@ -8,11 +8,11 @@ require_once __DIR__.'/../vendor/autoload.php';
 $app = new Silex\Application();
 
 $app->put('/user/register', function (Request $request) use ($app) {
-    return JsonResponse('Hello world, this is register');
+    return new JsonResponse('Hello world, this is register');
 });
 
 $app->post('/user/login', function (Request $request) use ($app) {
-    return JsonResponse('Hello world, this is login');
+    return new JsonResponse('Hello world, this is login');
 });
 $app['debug'] = true;
 $app->run();
